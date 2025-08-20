@@ -1,0 +1,143 @@
+Objetivo: Criar um site completo de gerenciamento do time de basquete Lions usando React + Vite + Tailwind CSS, com Supabase para Auth, Database e Storage. O projeto deve ser modular, funcional e pronto para rodar no Replit.
+
+Estrutura de Pastas e Arquivos
+/src
+  /components
+    Navbar.tsx
+    Login.tsx
+    Dashboard.tsx
+    Training.tsx
+    Gallery.tsx
+    Admin.tsx
+    PlayerCard.tsx
+    BestOfWeek.tsx
+    ExerciseCard.tsx
+    EventCalendar.tsx
+    LiveStream.tsx
+  /contexts
+    AppContext.tsx
+  /pages
+    Home.tsx
+    DashboardPage.tsx
+    TrainingPage.tsx
+    GalleryPage.tsx
+    AdminPage.tsx
+  App.tsx
+  main.tsx
+
+Componentes e Funcionalidades
+Navbar.tsx
+
+Links: Home, Dashboard, Training, Gallery, Admin (visível apenas para admin)
+
+Alternância modo claro/escuro usando Tailwind
+
+Responsiva (mobile + desktop)
+
+Login.tsx
+
+Login e cadastro com Supabase Auth
+
+Diferenciar perfis: Atleta, Admin
+
+Dashboard.tsx
+
+Informações do usuário logado
+
+Próximos treinos/jogos
+
+Área “Melhor da Semana” → foto, estatísticas, descrição (com componente BestOfWeek.tsx)
+
+Treinos do dia do aluno
+
+Lembretes automáticos
+
+Gráficos de evolução por treino e gerais
+
+Training.tsx
+
+Lista de treinos e exercícios
+
+Exercícios personalizáveis: métricas definidas pelo Admin
+
+Tipos de exercícios: Basquete (repetições, acertos, tempo, dificuldade), Aeróbico (tempo, distância, dificuldade, etc.)
+
+Upload de vídeos explicativos por exercício
+
+Gráficos individuais e gerais de desempenho do aluno
+
+Gallery.tsx
+
+Upload e remoção de imagens/vídeos (Supabase Storage)
+
+Criação de álbuns com carrossel
+
+Visualização responsiva
+
+Admin.tsx
+
+Gerenciar atletas (criar, editar, excluir, fotos de perfil)
+
+Definir “Melhor da Semana”
+
+Criar/editar/remover eventos no calendário (EventCalendar.tsx)
+
+Ao clicar em um atleta → exibir todos os dados + gráficos por exercício + gráfico geral
+
+Abrir lives via YouTube para jogos (NBB/NBA), visíveis apenas quando ativas
+
+IA de suporte para alunos e análise de treinos para Admin
+
+Context API (AppContext.tsx)
+
+Gerenciar estado global: usuário logado, modo claro/escuro, lista de atletas, treinos, eventos, galeria
+
+Hooks customizados para facilitar acesso aos dados do Supabase
+
+Estilo e Layout
+
+Tailwind CSS, modo claro/escuro
+
+Paleta de cores:
+
+Primária: Dourado (#FFD700)
+
+Secundária: Preto (#000000)
+
+Terciária: Branco (#FFFFFF)
+
+Destaque: Cinza escuro (#1E1E1E), Cinza claro (#F5F5F5)
+
+Cartões, botões arredondados com sombras suaves
+
+Layout em grid para dashboards, galerias e treinos
+
+Funcionalidades Extras
+
+Notificações e lembretes automáticos
+
+IA integrada:
+
+Suporte aos alunos (dicas, explicações de exercícios)
+
+Análise para Admin (evolução dos atletas, treinos e jogos)
+
+Métricas personalizáveis por exercício
+
+Lives integradas com YouTube
+
+Registro de horas de sono do aluno
+
+Instruções para Replit AI
+
+Gere todos os arquivos React conforme a estrutura acima.
+
+Inclua integração Supabase com variáveis VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY.
+
+Crie componentes modulares, reutilizáveis, com props, estados e hooks adequados.
+
+Código funcional e pronto para rodar no Replit, com Tailwind CSS configurado.
+
+Comentários explicativos em cada componente sobre suas funções.
+
+Inclua dashboard, gallery, training, admin, lives, IA e notificações conforme descrito.
